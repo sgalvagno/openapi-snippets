@@ -31,5 +31,31 @@
       "${1|application/json,application/xml,text/csv,application/gzip,text/html,image/jpeg,text/javascript,image/png,application/pdf,text/plain|}"
     ],
     "description": "Several content types such as ´application/json´"
+  },
+  "inpathstring":{
+    "prefix":"inpathstring",
+    "body": [
+      "- in: path",
+      "name: sample",
+      "description: The sample name",
+      "example: sample",
+      "required: true",
+      "schema:",
+      "  type: string"
+    ]
+  },
+  "inpathinterger":{
+    "prefix":"inpathstring",
+    "body": [
+      "- in: path",
+      "name: name",
+      "description: The sample name",
+      "example: sample",
+      "required: true",
+      "schema:",
+      "  type: integer",
+      "  minimum: 0",
+      "  maximum: 10"
+    ]
   }
 }
